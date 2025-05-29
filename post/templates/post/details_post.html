@@ -1,0 +1,9 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block content %}
+   <h1>Post Details</h1>
+   {% comment %} <p>Title: {{ post.title }}</p>
+   <p>Content: {{ post.content }}</p>
+   <a href="{% url 'post:update' post.id %}" class="btn btn-primary">Edit Post</a>
+   <a href="{% url 'post:delete' post.id %}" class="btn btn-danger">Delete Post</a> {% endcomment %}
+{% endblock content %}
